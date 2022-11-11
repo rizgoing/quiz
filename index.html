@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test na pidora</title>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <h1>ТЕСТ: кто ты нахуй?</h1>
+      </div>
+    </header>
+    <div class="body-wrap">
+      <div class="input-data">
+        <form action="submit" id="forma">
+          <div class="question-box">
+            <input
+              type="text"
+              placeholder="Enter your Fullname.."
+              id="name"
+              required
+            />
+          </div>
+          <div class="question-box">
+            <input
+              type="number"
+              placeholder="Enter your age.."
+              id="age"
+              required
+              min="1"
+              max="102"
+            />
+          </div>
+          <div class="question-box">
+            <input
+              type="text"
+              placeholder="Enter your sex.."
+              id="sex"
+              required
+            />
+          </div>
+          <div class="question-box">
+            <label for="biogr" class="text"
+              >Three words that makes you feel better:
+              <input
+                type="text"
+                placeholder="three words, use comma to separate.."
+                id="biogr"
+                required
+            /></label>
+          </div>
+          <button id="submit">Submit</button>
+        </form>
+      </div>
+      <div class="hidden image-box">
+        <div class="info"></div>
+        <img src="./img/1.png" alt="bettle" width="50%" class="image" />
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
